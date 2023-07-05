@@ -23,5 +23,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY . /home/app/
 
+WORKDIR /home/app/
 
-CMD python /home/app/main.py
+CMD python main.py
